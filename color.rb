@@ -6,6 +6,7 @@ File.open("web3.txt", "w") { |f|
   10000.times { f.write "#{sorted_string.chars.shuffle.join}\n" }
 }
 
+# https://stackoverflow.com/questions/3426404/create-a-hexadecimal-colour-based-on-a-string-with-javascript
 def hash_code(str)
   hash = 0
   str.chars.each do |c|
